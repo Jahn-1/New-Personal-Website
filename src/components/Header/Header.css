@@ -1,0 +1,59 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 64px; /* */
+    background-image: linear-gradient(to right,#0c3645, #07313a);
+    background-color: #626262;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navbar-links {
+    display: flex;
+    flex-direction: row;
+    line-height: 64px;
+    font-weight: 600;
+}
+
+.navbar-links img {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.navbar-links p {
+    text-align: center;
+    margin: 0;
+    padding: 0 25px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.navbar-links p:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+}
+
+.githubLogo {
+    height: 44px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.navbar-title {
+    font-weight: 600;
+    font-size: 20pt;
+    line-height: 64px;
+    margin-left: 15px;
+}
+
+
+
+@media (max-width: 630px) {
+    .navbar {
+        height: 44px;
+        line-height: 44px;
+    }
+}
