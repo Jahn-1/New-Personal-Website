@@ -23,7 +23,9 @@
     cursor: pointer;
 }
 
-.navbar-links p {
+.navbar-links * {
+    color: white;
+    text-decoration: none;
     text-align: center;
     margin: 0;
     padding: 0 25px;
@@ -31,7 +33,7 @@
     font-size: 14pt;
 }
 
-.navbar-links p:hover {
+.navbar-links *:hover {
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
 }

@@ -2,18 +2,23 @@ import React from 'react';
 import './Header.css';
 import githubLogo from './GitHubLogo.png'
 export default function Header() {
+
+    let anchor = document.getElementById('about-section');
+
+    
+
     return (
         <div className="navbar">
             <div className="navbar-title">
                 Jahanzeb Hussain
             </div>
             <div className="navbar-links">
-                <p>
+                <a href="#about-section">
                     About
-                </p>
-                <p>
+                </a>
+                <a href="#projects-section">
                     Projects
-                </p>
+                </a>
                 <p>
                     Contact Me
                 </p>
