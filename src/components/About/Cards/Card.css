@@ -1,0 +1,89 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    height: 100%;  
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    color: white;
+    margin: 10px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+}
+
+/* Do an horizontal flip when you move the mouse over the ƒlip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flip-card-front-default {
+    background-color: dodgerblue;
+}
+
+.flip-card-front-blue {
+    background-color: dodgerblue;
+}
+
+.flip-card-front-yellow {
+    background-color: rgb(255, 217, 0);
+}
+
+.flip-card-front-green {
+    background-color: rgb(42, 194, 0);
+}
+
+.flip-card-front-red {
+    background-color: rgb(255, 71, 71);
+}
+
+.flip-card-back-blue {
+    background-color: dodgerblue;
+}
+
+.flip-card-back-yellow {
+    background-color: rgb(255, 217, 0);
+}
+
+.flip-card-back-green {
+    background-color: rgb(42, 194, 0);
+}
+
+.flip-card-back-red {
+    background-color: rgb(255, 71, 71);
+}
+
+/* Style the back side */
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
