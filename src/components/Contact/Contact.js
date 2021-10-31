@@ -1,9 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 import TextField from '@mui/material/TextField';
-
 import './Contact.css'
+import gitHubLogo from './GitHub_Logo.png'
 import { Alert, Button, Collapse, IconButton } from '@mui/material';
+import { FaLinkedin } from 'react-icons/fa';
 export default function Contact() {
     const [name, setName] = useState();
     const [email, setEmail] = useState();
@@ -81,8 +82,15 @@ export default function Contact() {
                 />
                 <Button variant="contained" color="success" type="submit"> Send Message! </Button>
             </form>
-
+            <h3 className="helper-text">
+                You can also find my Github and LinkedIn here:
+            </h3>
+            <div id="logos">
+                <FaLinkedin className="linkedin-logo"/>
+                <img src={gitHubLogo} className="github-logo" alt="github-logo"/>
+            </div>
             
+
         </div>
     )
 }

@@ -25,6 +25,11 @@ export default function About() {
                         University Of New South Wales.
                     </p>
                     <p>
+                        My fascination for technology started at a young age starting with one of the earlier nintendo models.
+                        This fascination grew and i enjoyed learning how computers work at a very basic level in high school Technology class
+                        and now have happily chosen to persue it.
+                    </p>
+                    <p>
                         I have a passion for learning new things and solving hard problems.
                     </p>
                     <p>

@@ -30,14 +30,19 @@ export default function Card({ flavour, question, answer }) {
         <div className="flip-card">
             <div className="flip-card-inner">
                 <div className={`${frontClass} flip-card-front`}>
-                    <h3>
-                        {question}
-                    </h3>
+                    <div>
+                        <h3>
+                            {question}
+                        </h3>
+                    </div>
                 </div>
                 <div className={`${backClass} flip-card-back`}>
-                    <h3>
-                        {answer}
-                    </h3>
+                    <div>
+                        <h3>
+                            {answer}
+                        </h3>
+                    </div>
+                    
                 </div>
             </div>
         </div>
