@@ -31,7 +31,7 @@ function TimeLine() {
             <h3 className="vertical-timeline-element-title">Create database interface</h3>
             <h4 className="vertical-timeline-element-subtitle">For an E-commerce Client</h4>
             <p>
-                This webapp will be a user friendly method for a E-commerce client to create, edit and delete items/coupons.
+                This webapp will be a user-friendly system for a E-commerce client to create, edit and delete items/coupons.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -43,13 +43,12 @@ function TimeLine() {
             <h3 className="vertical-timeline-element-title">Create An E-commerce Website</h3>
             <h4 className="vertical-timeline-element-subtitle">Client Website</h4>
             <p>
-                Create an E-commerce website for client whilst integrating changes they made
-                on the previously made database interface.
+                Create an E-commerce website for client whilst integrating changes they make.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021"
+            date="2022"
             iconStyle={{ background: 'rgb(255,0,0)', color: '#fff' }}
             icon={<FaBitbucket />}
         >

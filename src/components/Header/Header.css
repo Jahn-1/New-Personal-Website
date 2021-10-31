@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    line-height: 64px;
 }
 
 .navbar-links {
@@ -33,7 +34,7 @@
     font-size: 14pt;
 }
 
-.navbar-links *:hover {
+.navbar-link:hover {
     border-bottom: 4px solid #fff;
     transition: all 0.2s ease-out;
 }
@@ -47,7 +48,6 @@
 .navbar-title {
     font-weight: 600;
     font-size: 20pt;
-    line-height: 64px;
     margin-left: 15px;
 }
 
@@ -57,5 +57,9 @@
     .navbar {
         height: 44px;
         line-height: 44px;
+    }
+
+    .navbar-links * {
+        display: none;
     }
 }

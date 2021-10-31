@@ -8,10 +8,9 @@ export default function About() {
     return (
         <div className="about-section">
             <div className="section-title" id="about-section">
-            <h3>
-                About
-            </h3>
-            
+                <h3>
+                    About
+                </h3>
             </div>
             <div className="section-subtitle">
                 <p>
@@ -19,7 +18,7 @@ export default function About() {
                 </p> 
             </div>
             
-            <div class="about-content">
+            <div className="about-content">
                 <div className="about-text">
                     <p>
                         Hey there! I'm a second year Computer Science student studying at the 

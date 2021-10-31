@@ -1,7 +1,10 @@
 .projects-section {
-    height: 1000px;
+    margin-top: 10px;
 }
 
 #projects-section {
     scroll-margin-top: 64px;
+    font-family: Helvetica;
+    font-size: 30pt;
+    text-align: center;
 }

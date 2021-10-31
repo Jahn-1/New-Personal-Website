@@ -1,0 +1,27 @@
+#contact-me-section {
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contact-me-title {
+    scroll-margin-top: 64px;
+    font-family: Helvetica;
+    font-size: 30pt;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+form * {
+    margin: 10px 0;
+}
+
+#alert {
+    text-align: center;
+    margin: 0 20px;
+}
+

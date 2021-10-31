@@ -1,5 +1,7 @@
 import React from 'react'
 import './Card.css'
+
+/* wrap around w3schools html css flip card*/
 export default function Card({ flavour, question, answer }) {
     let frontClass;
     let backClass;
