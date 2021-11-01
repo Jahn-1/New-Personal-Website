@@ -28,10 +28,10 @@ function TimeLine() {
             icon={<FaDatabase />}
             
         >
-            <h3 className="vertical-timeline-element-title">Create database interface</h3>
+            <h3 className="vertical-timeline-element-title">Create database user interface</h3>
             <h4 className="vertical-timeline-element-subtitle">For an E-commerce Client</h4>
             <p>
-                This webapp will be a user-friendly system for a E-commerce client to create, edit and delete items/coupons.
+                This webapp will be a user-friendly system for an E-commerce client to create, edit and delete items/coupons.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -55,7 +55,7 @@ function TimeLine() {
             <h3 className="vertical-timeline-element-title">Bitbucket</h3>
             <h4 className="vertical-timeline-element-subtitle">Bitbucket.org</h4>
             <p>
-            To create a useful extension for bitbucket users.
+            Create a useful extension for bitbucket users.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -67,7 +67,7 @@ function TimeLine() {
             <h3 className="vertical-timeline-element-title">Internship</h3>
             <h4 className="vertical-timeline-element-subtitle">Australia, NSW</h4>
             <p>
-            Get an Internship in an Australian bussiness on software engineering (backend).
+            Get a software engineering (backend) Internship in an Australian bussiness.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement

@@ -39,19 +39,20 @@ export default function About() {
                     </p>
                     <div className="cards">
                         <Card flavour="blue" question="Favourite Movie" answer="The Dark Knight"/>
-                        <Card flavour="red" question="Favourite Sport" answer="Soccer "/>
+                        <Card flavour="yellow" question="Languages I Can Speak" answer="English (mothertounge), Urdu"/>
+
                     </div>
                     <div className="cards">
-                        <Card flavour="yellow" question="Favourite Movie" answer="The Dark Knight"/>
-                        <Card flavour="green" question="Favourite Quote" answer="The Dark Knight"/>
+                        <Card flavour="red" question="Favourite Sport" answer="Soccer "/>
+                        <Card flavour="green" question="A Quote I Like" answer='"Just do it" - Nike'/>
                     </div>
                     <div className="cards-mobile">
                         <Card flavour="blue" question="Favourite Movie" answer="The Dark Knight"/>
-                        <Card flavour="red" question="Favourite Sport" answer="Soccer "/>
+                        <Card flavour="yellow" question="Languages I Can Speak" answer="English (mothertounge), Urdu"/>
                     </div>
                     <div className="cards-mobile">
-                        <Card flavour="yellow" question="Favourite Movie" answer="The Dark Knight"/>
-                        <Card flavour="green" question="Favourite Quote" answer="The Dark Knight"/>
+                        <Card flavour="red" question="Favourite Sport" answer="Soccer "/>
+                        <Card flavour="green" question="A Quote I Like" answer='"Just do it" - Nike'/>
                     </div>
                 </div>
                 <div className="about-image">

@@ -11,8 +11,13 @@
 }
 
 form {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px #c2c2c2;
+    border-radius: 10px;
+    outline: 1px solid rgb(215, 215, 215);
 }
 
 form * {
@@ -61,4 +66,9 @@ form * {
 .helper-text {
     text-align: center;
     margin: 15px 0;
+}
+
+.final-text {
+    margin-top: 20px;
+    text-align: center;
 }

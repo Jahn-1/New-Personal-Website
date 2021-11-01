@@ -3,25 +3,16 @@ import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import './Contact.css'
 import gitHubLogo from './GitHub_Logo.png'
-import { Alert, Button, Collapse, IconButton } from '@mui/material';
+import { Alert, Button, Collapse } from '@mui/material';
 import { FaLinkedin } from 'react-icons/fa';
 export default function Contact() {
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [message, setMessage] = useState();
     const [displaySuccess, setDisplaySuccess] = useState(false)
+    const [disabled, setDisabled] = useState(false)
     const handleSubmit = (e) => {
-        console.log(name);
-        console.log(email);
-        console.log(message);
-        const nameField = document.getElementById('name');
-        const emailField = document.getElementById('email');
-        const messageField = document.getElementById('message');
-        const inputs = [nameField, emailField, messageField];
-        inputs.forEach(input => {
-            input.disabled = true;
-        })
-
+        setDisabled(true)
         setDisplaySuccess(true)
         e.preventDefault();
     }
@@ -34,19 +25,8 @@ export default function Contact() {
                 </h3>
             </div>
             <Collapse in={displaySuccess}>
-                <Alert action={
-                    <IconButton
-                    aria-label="close"
-                    color="inherit"
-                    size="small"
-                    onClick={() => {
-                        setDisplaySuccess(false)
-                    }}
-                    >
-                        &times;
-                    </IconButton>}
-                    severity="success" id="alert">
-                        Thanks for the message! I'll get back to you as soon as possible (if applicable). Have a nice day!
+                <Alert severity="success" id="alert">
+                    Thanks for the message! I'll get back to you as soon as possible (if applicable). Have a nice day!
                 </Alert>
             </Collapse>
             <form onSubmit={handleSubmit}>
@@ -61,6 +41,7 @@ export default function Contact() {
                     value={name}
                     autocomplete="off"
                     required
+                    disabled={disabled}
                 />
                 <TextField
                     id="email"
@@ -70,6 +51,7 @@ export default function Contact() {
                     onChange={e => setEmail(e.target.value)}
                     value={email} 
                     required
+                    disabled={disabled}
                 />
                 <TextField
                     id="message"
@@ -79,17 +61,20 @@ export default function Contact() {
                     onChange={e => setMessage(e.target.value)}
                     value={message}
                     required
+                    disabled={disabled}
                 />
-                <Button variant="contained" color="success" type="submit"> Send Message! </Button>
+                <Button variant="contained" color="success" type="submit" disabled={disabled}> Send Message! </Button>
             </form>
             <h3 className="helper-text">
-                You can also find my Github and LinkedIn here:
+                You can also find me on Github and LinkedIn here:
             </h3>
             <div id="logos">
-                <FaLinkedin className="linkedin-logo"/>
                 <img src={gitHubLogo} className="github-logo" alt="github-logo"/>
+                <FaLinkedin className="linkedin-logo"/>
             </div>
-            
+            <h1 className="final-text">
+                🎉 Thanks for checking out my page! Have a nice day! 🎉
+            </h1>
 
         </div>
     )
