@@ -46,14 +46,6 @@ export default function About() {
                         <Card flavour="red" question="Favourite Sport" answer="Soccer "/>
                         <Card flavour="green" question="A Quote I Like" answer='"Just do it" - Nike'/>
                     </div>
-                    <div className="cards-mobile">
-                        <Card flavour="blue" question="Favourite Movie" answer="The Dark Knight"/>
-                        <Card flavour="yellow" question="Languages I Can Speak" answer="English (mothertounge), Urdu"/>
-                    </div>
-                    <div className="cards-mobile">
-                        <Card flavour="red" question="Favourite Sport" answer="Soccer "/>
-                        <Card flavour="green" question="A Quote I Like" answer='"Just do it" - Nike'/>
-                    </div>
                 </div>
                 <div className="about-image">
                     <img src={gif} alt="gif"/>

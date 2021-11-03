@@ -58,18 +58,10 @@
     flex-grow: 1;
 }
 
-.cards-mobile {
-    display: none;
-}
-
-
 
 @media (max-width: 870px) {
-    .cards {
-        display: none;
-    }
 
-    .cards-mobile {
+    .cards {
         display: block;
         display: flex;
         flex-direction: row;
@@ -78,7 +70,7 @@
         margin-bottom: 25px;
     }
 
-    .cards-mobile * {
+    .cards {
         width: 100%;
     }
 

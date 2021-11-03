@@ -16,7 +16,7 @@ export default function MainBody() {
             {/* <h1 className="hero-name-extra">
                 ...
             </h1> */}
-            <p>
+            <p className="hero-name-extra">
                 An Aspiring Full Stack Engineer
             </p>
             </div>
