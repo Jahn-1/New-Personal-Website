@@ -53,14 +53,16 @@ form * {
     font-size: 14pt;
 }
 
-#logos {
+.logos {
     display: flex;
     flex-direction: row;
     align-items: center;
+    /* justify-content: space-between; */
+    justify-content: center;
 }
 
-#logos * {
-    height: 100%;
+.logos a {
+    flex: 1;
 }
 
 .helper-text {

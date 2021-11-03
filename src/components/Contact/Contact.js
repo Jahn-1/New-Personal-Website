@@ -68,9 +68,13 @@ export default function Contact() {
             <h3 className="helper-text">
                 You can also find me on Github and LinkedIn here:
             </h3>
-            <div id="logos">
-                <img src={gitHubLogo} className="github-logo" alt="github-logo"/>
-                <FaLinkedin className="linkedin-logo"/>
+            <div className="logos">
+                <a href="https://github.com/jahn-1" target="_blank" rel="noreferrer">
+                    <img src={gitHubLogo} className="github-logo" alt="github-logo"/>
+                </a>
+                <a href="https://www.linkedin.com/in/jahanzeb-hussain-427a9a202" target="_blank" rel="noreferrer">
+                    <FaLinkedin className="linkedin-logo"/>
+                </a>
             </div>
             <h1 className="final-text">
                 🎉 Thanks for checking out my page! Have a nice day! 🎉

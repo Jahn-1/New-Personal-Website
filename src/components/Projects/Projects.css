@@ -1,5 +1,6 @@
 .projects-section {
     margin-top: 10px;
+    overflow-x: hidden;
 }
 
 #projects-section {
