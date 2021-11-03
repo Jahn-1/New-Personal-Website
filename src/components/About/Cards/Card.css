@@ -6,7 +6,6 @@
     color: white;
     margin: 10px;
     margin-left: 0;
-    overflow-x: visible;
 }
 
 /* This container is needed to position the front and back side */
@@ -17,13 +16,11 @@
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-    overflow-x: visible;
 }
 
 /* Do an horizontal flip when you move the mouse over the ƒlip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-    overflow-x: visible;
 }
 
 

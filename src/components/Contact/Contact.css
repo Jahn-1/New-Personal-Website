@@ -1,6 +1,7 @@
 #contact-me-section {
     min-height: 100vh;
     margin: 0 20px;
+    overflow-x: visible;
 }
 
 .contact-me-title {
@@ -17,7 +18,6 @@ form {
     padding: 10px;
     box-shadow: 5px 5px 5px 5px #c2c2c2;
     border-radius: 10px;
-    outline: 1px solid rgb(215, 215, 215);
 }
 
 form * {

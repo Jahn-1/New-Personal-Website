@@ -2,14 +2,16 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 * {
     scroll-margin-top: 64px;
-    overflow-x: hidden; /* there will never be a need for horizontal scrolling */
 }
 
 @media (max-width: 870px) {
     * {
         scroll-margin-top: 44px;
-    
     }
 }
