@@ -11,7 +11,7 @@
     text-align: center;
 }
 
-form {
+#contact-form {
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -20,7 +20,7 @@ form {
     border-radius: 10px;
 }
 
-form * {
+#contact-form * {
     margin: 10px 0;
 }
 
