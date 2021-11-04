@@ -18,6 +18,24 @@ export default function Contact() {
     //     e.preventDefault();
     // }
 
+    const handleSubmit = e => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact-form", name: name, email:email, message:message})
+        })
+          .then(() => alert("Success!"))
+          .catch(error => alert(error));
+  
+        e.preventDefault();
+      };
+
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
+
     return (
         <div id="contact-me-section">
             <div className="contact-me-title">
@@ -30,7 +48,7 @@ export default function Contact() {
                     Thanks for the message! I'll get back to you as soon as possible (if applicable). Have a nice day!
                 </Alert>
             </Collapse> */}
-            <form name="contact-form" method="POST" data-netlify="true">
+            <form onSubmit={handleSubmit} name="contact-form" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact-form" />
                 <TextField
                     id="name"
@@ -54,6 +72,7 @@ export default function Contact() {
                 <TextField
                     id="message"
                     type="text"
+                    name="message"
                     label="Message"
                     multiline
                     rows={4}
