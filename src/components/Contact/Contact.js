@@ -3,19 +3,20 @@ import { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import './Contact.css'
 import gitHubLogo from './GitHub_Logo.png'
-import { Alert, Button, Collapse } from '@mui/material';
+// import { Alert, Button, Collapse } from '@mui/material';
+import { Button } from '@mui/material';
 import { FaLinkedin } from 'react-icons/fa';
 export default function Contact() {
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [message, setMessage] = useState();
-    const [displaySuccess, setDisplaySuccess] = useState(false)
-    const [disabled, setDisabled] = useState(false)
-    const handleSubmit = (e) => {
-        setDisabled(true)
-        setDisplaySuccess(true)
-        e.preventDefault();
-    }
+    // const [displaySuccess, setDisplaySuccess] = useState(false)
+    // const [disabled, setDisabled] = useState(false)
+    // const handleSubmit = (e) => {
+    //     setDisabled(true)
+    //     setDisplaySuccess(true)
+    //     e.preventDefault();
+    // }
 
     return (
         <div id="contact-me-section">
@@ -24,11 +25,11 @@ export default function Contact() {
                     Contact me
                 </h3>
             </div>
-            <Collapse in={displaySuccess}>
+            {/* <Collapse in={displaySuccess}>
                 <Alert severity="success" id="alert">
                     Thanks for the message! I'll get back to you as soon as possible (if applicable). Have a nice day!
                 </Alert>
-            </Collapse>
+            </Collapse> */}
             <form name="contact-form" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact-form" />
                 <TextField
@@ -40,7 +41,6 @@ export default function Contact() {
                     value={name}
                     autocomplete="off"
                     required
-                    disabled={disabled}
                 />
                 <TextField
                     id="email"
@@ -50,7 +50,6 @@ export default function Contact() {
                     onChange={e => setEmail(e.target.value)}
                     value={email} 
                     required
-                    disabled={disabled}
                 />
                 <TextField
                     id="message"
@@ -61,13 +60,11 @@ export default function Contact() {
                     onChange={e => setMessage(e.target.value)}
                     value={message}
                     required
-                    disabled={disabled}
                 />
                 <Button 
                     variant="contained" 
                     color="success" 
                     type="submit" 
-                    disabled={disabled}
                 > Send Message! </Button>
             </form>
             <h3 className="helper-text">
