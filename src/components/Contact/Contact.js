@@ -29,7 +29,7 @@ export default function Contact() {
                     Thanks for the message! I'll get back to you as soon as possible (if applicable). Have a nice day!
                 </Alert>
             </Collapse>
-            <form onSubmit={handleSubmit} name="contact-form" method="POST" data-netlify="true">
+            <form name="contact-form" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact-form" />
                 <TextField
                     id="name"
