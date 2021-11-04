@@ -27,7 +27,7 @@ export default function About() {
                     <p>
                         My fascination for technology started at a young age starting with one of the earlier nintendo models.
                         This fascination grew and i enjoyed learning how computers work at a very basic level in high school Technology class
-                        and now have happily chosen to persue it.
+                        and now have happily chosen to pursue it.
                     </p>
                     <p>
                         I have a passion for learning new things and solving hard problems.

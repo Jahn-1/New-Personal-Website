@@ -29,9 +29,8 @@ export default function Contact() {
                     Thanks for the message! I'll get back to you as soon as possible (if applicable). Have a nice day!
                 </Alert>
             </Collapse>
-            <form onSubmit={handleSubmit}>
-                <input type="hidden" id="bot-protection" />
-                <input type="hidden" name="contact" value="contact" />
+            <form onSubmit={handleSubmit} name="contact-form" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact-form" />
                 <TextField
                     id="name"
                     type="text"
@@ -55,6 +54,7 @@ export default function Contact() {
                 />
                 <TextField
                     id="message"
+                    type="text"
                     label="Message"
                     multiline
                     rows={4}
@@ -63,7 +63,12 @@ export default function Contact() {
                     required
                     disabled={disabled}
                 />
-                <Button variant="contained" color="success" type="submit" disabled={disabled}> Send Message! </Button>
+                <Button 
+                    variant="contained" 
+                    color="success" 
+                    type="submit" 
+                    disabled={disabled}
+                > Send Message! </Button>
             </form>
             <h3 className="helper-text">
                 You can also find me on Github and LinkedIn here:

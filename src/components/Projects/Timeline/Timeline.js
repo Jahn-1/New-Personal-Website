@@ -16,7 +16,7 @@ function TimeLine() {
             <h3 className="vertical-timeline-element-title">Personal website</h3>
             <h4 className="vertical-timeline-element-subtitle">Jahanzeb.info</h4>
             <p>
-                Personal website with an brief introduction to who i am, current career progress
+                Personal website with a brief introduction to who i am, current career progress
                 and github account. 
             </p>
         </VerticalTimelineElement>
