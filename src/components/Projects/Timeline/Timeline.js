@@ -67,7 +67,7 @@ function TimeLine() {
             <h3 className="vertical-timeline-element-title">Internship</h3>
             <h4 className="vertical-timeline-element-subtitle">Australia, NSW</h4>
             <p>
-            Get a software engineering (backend) Internship in an Australian bussiness.
+            Get a software engineering Internship in Australia.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
