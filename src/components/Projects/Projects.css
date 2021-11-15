@@ -4,7 +4,14 @@
 }
 
 #projects-section {
+    margin-top: 64px;
     font-family: Helvetica;
     font-size: 30pt;
     text-align: center;
+}
+
+@media (max-width: 870px) {
+    #projects-section {
+        scroll-margin-top: 44px;
+    }
 }
