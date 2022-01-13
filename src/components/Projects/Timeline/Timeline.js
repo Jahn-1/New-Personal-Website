@@ -22,28 +22,28 @@ function TimeLine() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
             date="2021"
-            iconStyle={{ background: 'rgb(255, 217, 0)', color: '#fff' }}
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
             icon={<FaDatabase />}
             
         >
             <h3 className="vertical-timeline-element-title">Create database user interface</h3>
             <h4 className="vertical-timeline-element-subtitle">For an E-commerce Client</h4>
             <p>
-                This webapp will be a user-friendly system for an E-commerce client to create, edit and delete items/coupons.
+                This webapp will be a user-friendly system for an E-commerce client to create, edit and delete products, shipping prices and coupons.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
             date="2022"
-            iconStyle={{ background: 'rgb(255,0,0)', color: '#fff' }}
+            contentArrowStyle={{ borderLeft: '7px solid  rgb(33, 150, 243)' }}
+            iconStyle={{ background: 'rgb(255, 217, 0)', color: '#fff' }}
             icon={<FaShoppingCart />}
         >
             <h3 className="vertical-timeline-element-title">Create An E-commerce Website</h3>
             <h4 className="vertical-timeline-element-subtitle">Client Website</h4>
             <p>
-                Create an E-commerce website for client whilst integrating changes they make.
+                Create an E-commerce website for the client whilst integrating changes they make on the interface.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
