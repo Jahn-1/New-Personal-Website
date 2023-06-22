@@ -21,7 +21,7 @@ export default function About() {
             <div className="about-content">
                 <div className="about-text">
                     <p>
-                        Hey there! I'm a second year Computer Science student studying at the 
+                        Hey there! I'm a fourth year Computer Science student studying at the 
                         University Of New South Wales.
                     </p>
                     <p>
@@ -49,9 +49,7 @@ export default function About() {
                         and problem solver.
                     </p>
                     <p>
-                        I am now working on a two part project. The objective of the project 
-                        is to create an E-commerce website. But before that, I'll have to make a system that allows
-                        a client to create, edit and delete products, shipping prices and coupons.
+                        I am currently working as a full time graduate software engineer while completing my studies and working on a large personal project. This personal project of mine has two parts to it: The system that allows a client to create, edit and delete products, shipping prices and coupons which has already been designed and developed now by me. The second part of the project is the customer facing ecommerce website which is almost complete.
                     </p>
                     <div className="cards">
                         <Card flavour="blue" question="Favourite Movie" answer="The Dark Knight"/>

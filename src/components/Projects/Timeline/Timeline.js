@@ -1,7 +1,7 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css'; 
-import { FaDatabase, FaBitbucket, FaBriefcase, FaReact, FaUniversity, FaShoppingCart } from 'react-icons/fa';
+import { FaDatabase, FaBriefcase, FaReact, FaUniversity, FaShoppingCart } from 'react-icons/fa';
 
 function TimeLine() {
     return (<>    
@@ -35,7 +35,19 @@ function TimeLine() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2022"
+            date="2022-2023"
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+            icon={<FaBriefcase />}
+        >
+            <h3 className="vertical-timeline-element-title">Internship</h3>
+            <h4 className="vertical-timeline-element-subtitle">Australia, NSW</h4>
+            <p>
+                Complete a software engineering Internship in Australia.
+            </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2023"
             contentArrowStyle={{ borderLeft: '7px solid  rgb(33, 150, 243)' }}
             iconStyle={{ background: 'rgb(255, 217, 0)', color: '#fff' }}
             icon={<FaShoppingCart />}
@@ -44,30 +56,6 @@ function TimeLine() {
             <h4 className="vertical-timeline-element-subtitle">Client Website</h4>
             <p>
                 Create an E-commerce website for the client whilst integrating changes they make on the interface.
-            </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2022"
-            iconStyle={{ background: 'rgb(255,0,0)', color: '#fff' }}
-            icon={<FaBitbucket />}
-        >
-            <h3 className="vertical-timeline-element-title">Bitbucket</h3>
-            <h4 className="vertical-timeline-element-subtitle">Bitbucket.org</h4>
-            <p>
-            Create a useful extension for bitbucket users.
-            </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2022"
-            iconStyle={{ background: 'rgb(255,0,0)', color: '#fff' }}
-            icon={<FaBriefcase />}
-        >
-            <h3 className="vertical-timeline-element-title">Internship</h3>
-            <h4 className="vertical-timeline-element-subtitle">Australia, NSW</h4>
-            <p>
-            Get a software engineering Internship in Australia.
             </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
